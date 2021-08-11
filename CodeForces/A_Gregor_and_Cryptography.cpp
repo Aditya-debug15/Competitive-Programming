@@ -11,18 +11,12 @@ long long int M = 1e9 + 7;
 #define vpi vector<pair<int,int>>
 void solve()
 {
-    ll n,x,t;
-    cin>>n>>x>>t;
-    ll z=t/x;
-    if(n>=t)
-    {
-        cout<<(n*(n-1))/2<<endl;
-    }
-    else{
-        ll part=n*z;
-        ll part2 = (z*(z+1))/2;
-        cout<<part-part2<<endl;
-    }
+    ll n;
+    cin>>n;
+    if(n==5)
+        cout<<2<<" "<<4<<endl;
+    else
+        cout<<2<<" "<<n/2<<"\n";
 }
 int main()
 {
